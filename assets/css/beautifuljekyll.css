@@ -4,12 +4,14 @@ body, .bg {
 .post-preview {
     margin-bottom: 15px;
 }
-.post-preview a {
+.post-preview .media {
+    position: relative;
     background: #fff;
     height: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,.15)!important;
-    border-radius: 10px;
-    overflow: hidden;    text-decoration: none;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: .25rem;
 }
 .post-preview h2 {
     font-size: 20px;
@@ -21,4 +23,14 @@ body, .bg {
 
 .post-preview .media-body {
     padding: 15px;
-}
+}.post-preview img {
+    width: 130px;height: 130px;
+    object-fit: cover;
+}.post-preview .btn{
+position: absolute;
+    right: 10px;
+    bottom: 10px;}.post-thumb {
+        overflow: hidden;
+        margin: 10px;
+        border-radius: .25rem;
+    }

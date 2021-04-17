@@ -1,8 +1,8 @@
-<footer>
+<footer class="bg-light py-5 shadow-tad">
   <div class="container-md beautiful-jekyll-footer">
     <div class="row">
       <div class="col">
-      {% include social-networks-links.html %}
+
       {% if page.footer-extra %}
         <div class="footer-custom-content">
           {% for file in page.footer-extra %}
@@ -31,10 +31,7 @@
         {% endif %}
       {% endif%}
       </p>
-      {% unless site.remove-ads %}<p class="theme-by text-muted">
-        Powered by
-        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-      </p>{% endunless %}
+
       </div>
     </div>
   </div>

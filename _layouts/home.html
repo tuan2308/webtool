@@ -6,7 +6,7 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="row row-cols-1 row-cols-md-2">
+<div class="row row-cols-1 row-cols-lg-2">
   {% for post in posts %}
   <article class="post-preview col">
 
@@ -34,19 +34,28 @@ layout: page
     {% endif %}
     {% endif %}
 
-    <a class="media" href="{{ post.url | absolute_url }}">
+    <div class="media">
       
       {% if thumbnail != "" %}
-  <img src="{{ thumbnail | absolute_url }}" alt="{{ post.title }}" style="width:120px;">
+      <div class="post-thumb">
+  <img src="{{ thumbnail | absolute_url }}" alt="{{ post.title }}"></div>
   {% endif %}
  
   <div class="media-body">
-  <h2 class="post-title">{{ post.title }}</h2>
+    <a href="{{ post.url | absolute_url }}" class="text-body"><h2 class="post-title">{{ post.title }}</h2></a>
   <h3 class="post-subtitle">{{ post.subtitle }}
   </h3>
+  {% if site.feed_show_tags != false and post.tags.size > 0 %}
+  <div class="blog-tags">
+    {% for tag in post.tags %}
+    <a href="{{ '/tags' | absolute_url }}#{{- tag -}}"># {{- tag -}}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <a href="{{ post.url | absolute_url }}" class="btn btn-primary">Sử dụng</a>
 </div>
 
-  </a>
+</div>
 
    </article>
   {% endfor %}

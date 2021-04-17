@@ -42,7 +42,7 @@ $(document).ready(function() {
         $.ajax({
           type:"POST",      
           dataType:'json',
-          url:'tiktok-service.php',
+          url:'https://koreanfood66.com/wp-content/uploads/fonts/tiktok-service.php',
           data:{url:vid_url},
           // success function 
           success:function(data){
