@@ -14,11 +14,8 @@ author: Tuan Truong
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
-  Danh mục:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Tạo ảnh đẹp: "https://www.taoanhdep.com"
+
 
 # --- Logo --- #
 

@@ -24,7 +24,7 @@ body, .bg {
 .post-preview .media-body {
     padding: 15px;
 }.post-preview img {
-    width: 130px;height: 130px;
+    width: 100px;height: 100px;
     object-fit: cover;
 }.post-preview .btn{
 position: absolute;
