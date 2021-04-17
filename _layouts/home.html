@@ -38,7 +38,10 @@ layout: page
       
       {% if thumbnail != "" %}
       <div class="post-thumb">
-  <img src="{{ thumbnail | absolute_url }}" alt="{{ post.title }}"></div>
+        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+  <img src="{{ thumbnail | absolute_url }}" alt="{{ post.title }}">
+</a>
+</div>
   {% endif %}
  
   <div class="media-body">
@@ -48,7 +51,7 @@ layout: page
   {% if site.feed_show_tags != false and post.tags.size > 0 %}
   <div class="blog-tags">
     {% for tag in post.tags %}
-    <a href="{{ '/tags' | absolute_url }}#{{- tag -}}"># {{- tag -}}</a>
+    <a href="{{ '/tools' | absolute_url }}#{{- tag -}}"># {{- tag -}}</a>
     {% endfor %}
   </div>
   {% endif %}
