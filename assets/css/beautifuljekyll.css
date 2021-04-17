@@ -22,15 +22,13 @@ body, .bg {
 }
 
 .post-preview .media-body {
-    padding: 15px;
+    padding: 10px;
 }.post-preview img {
-    width: 128px;height: 100px;
+    width: 75px;height: 75px;
     object-fit: cover;
-}.post-preview .btn{
-position: absolute;
-    right: 10px;
-    bottom: 10px;}.post-thumb {
+}
+.post-thumb {
         overflow: hidden;
-        margin: 10px;
+        margin: 10px 0 10px 10px;
         border-radius: .25rem;
     }
