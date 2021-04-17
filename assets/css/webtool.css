@@ -18,7 +18,7 @@ body, .bg {
 }
 
 .post-preview h3 {
-    font-size: 15px;color: rgba(0,0,0,.5)!important;
+    font-size: 15px;color: #777;
 }
 
 .post-preview .media-body {
