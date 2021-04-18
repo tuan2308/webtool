@@ -8,7 +8,7 @@ body, .bg {
     position: relative;
     background: #fff;
     height: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15)!important;
+    border:1px solid #ddd;
     overflow: hidden;
     text-decoration: none;
     border-radius: .25rem;
