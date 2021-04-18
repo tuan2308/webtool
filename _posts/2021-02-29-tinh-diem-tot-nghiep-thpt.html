@@ -38,27 +38,27 @@ thumbnail-img: https://znews-photo.zadn.vn/w660/Uploaded/mdf_drkydd/2019_06_26/6
     <div class="row">
     <div class="col-sm-4">
     <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">Toán</span></span>
-    <input onblur="if(this.value>10)this.value=10" id="diemtoan" type="number" class="form-control" name="diemtoan" placeholder="Điểm môn toán">
+    <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtoan" type="number" class="form-control" name="diemtoan" placeholder="Điểm môn toán">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">Văn</span></span> <input onblur="if(this.value>10)this.value=10" id="diemvan" type="number" class="form-control" name="diemvan" placeholder="Điểm môn văn"></div>
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">Văn</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemvan" type="number" class="form-control" name="diemvan" placeholder="Điểm môn văn"></div>
     <br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">Anh</span></span> <input onblur="if(this.value>10)this.value=10" id="diemanh" type="number" class="form-control" name="diemanh" placeholder="Điểm môn anh"></div>
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">Anh</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemanh" type="number" class="form-control" name="diemanh" placeholder="Điểm môn anh"></div>
     <br />
     </div>
     <div class="col-sm-4">
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TH1</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtohop1" type="number" class="form-control" name="diemtohop1" placeholder="Điểm môn tổ hợp 1">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TH1</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtohop1" type="number" class="form-control" name="diemtohop1" placeholder="Điểm môn tổ hợp 1">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TH2</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtohop2" type="number" class="form-control" name="diemtohop2" placeholder="Điểm môn tổ hợp 2">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TH2</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtohop2" type="number" class="form-control" name="diemtohop2" placeholder="Điểm môn tổ hợp 2">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TH3</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtohop3" type="number" class="form-control" name="diemtohop3" placeholder="Điểm môn tổ hợp 3">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TH3</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtohop3" type="number" class="form-control" name="diemtohop3" placeholder="Điểm môn tổ hợp 3">
     </div><br />
     </div>
     <div class="col-sm-4">
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtb" type="number" class="form-control" name="diemtb" placeholder="Điểm trung bình cả năm">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtb" type="number" class="form-control" name="diemtb" placeholder="Điểm trung bình cả năm">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input onblur="if(this.value>2)this.value=2" id="diemkk" type="number" class="form-control" name="diemkk" placeholder="Điểm khuyến khích">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input min="0" max="10"onblur="if(this.value>2)this.value=2" id="diemkk" type="number" class="form-control" name="diemkk" placeholder="Điểm khuyến khích">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input onblur="if(this.value>0.5)this.value=0.5" id="diemut" type="number" class="form-control" name="diemut" placeholder="Điểm ưu tiên"></div>
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input min="0" max="10"onblur="if(this.value>0.5)this.value=0.5" id="diemut" type="number" class="form-control" name="diemut" placeholder="Điểm ưu tiên"></div>
     <br />
     </div>
     </div> <button type="button" class="btn btn-success btn-block" onclick="tinhxuoii()" data-toggle="modal" data-target="#tinhxuoi0">Tính</button>
@@ -66,10 +66,10 @@ thumbnail-img: https://znews-photo.zadn.vn/w660/Uploaded/mdf_drkydd/2019_06_26/6
     </div>
     <div class="tab-pane fade" id="tn" role="tabpanel" aria-labelledby="tn-tab">
     <form>
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtbn" type="number" class="form-control" name="diemtbn" placeholder="Điểm trung bình cả năm"></div>
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtbn" type="number" class="form-control" name="diemtbn" placeholder="Điểm trung bình cả năm"></div>
     <br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input onblur="if(this.value>2)this.value=2" id="diemkkn" type="number" class="form-control" name="diemkkn" placeholder="Điểm khuyến khích"></div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input onblur="if(this.value>0.5)this.value=0.5" id="diemutn" type="number" class="form-control" name="diemutn" placeholder="Điểm ưu tiên"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input min="0" max="10"onblur="if(this.value>2)this.value=2" id="diemkkn" type="number" class="form-control" name="diemkkn" placeholder="Điểm khuyến khích"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input min="0" max="10"onblur="if(this.value>0.5)this.value=0.5" id="diemutn" type="number" class="form-control" name="diemutn" placeholder="Điểm ưu tiên"></div><br />
     <button type="button" class="btn btn-success btn-block" onclick="tinhnguocc()" data-toggle="modal" data-target="#tinhnguoc0">Tính</button>
     </form>
     </div>
@@ -77,15 +77,15 @@ thumbnail-img: https://znews-photo.zadn.vn/w660/Uploaded/mdf_drkydd/2019_06_26/6
     <form>
     <div class="row">
     <div class="col-sm-6">
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT1</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtoangdtx" type="number" class="form-control" name="diemtoangdtx" placeholder="Điểm bài thi 1"></div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT2</span></span> <input onblur="if(this.value>10)this.value=10" id="diemvangdtx" type="number" class="form-control" name="diemvangdtx" placeholder="Điểm bài thi 2"></div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT3</span></span> <input onblur="if(this.value>10)this.value=10" id="diemanhgdtx" type="number" class="form-control" name="diemanhgdtx" placeholder="Điểm bài thi 3"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT1</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtoangdtx" type="number" class="form-control" name="diemtoangdtx" placeholder="Điểm bài thi 1"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT2</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemvangdtx" type="number" class="form-control" name="diemvangdtx" placeholder="Điểm bài thi 2"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT3</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemanhgdtx" type="number" class="form-control" name="diemanhgdtx" placeholder="Điểm bài thi 3"></div><br />
     </div>
     <div class="col-sm-6">
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtbgdtx" type="number" class="form-control" name="diemtbgdtx" placeholder="Điểm trung bình cả năm"></div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input onblur="if(this.value>2)this.value=2" id="diemkkgdtx" type="number" class="form-control" name="diemkkgdtx" placeholder="Điểm khuyến khích">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtbgdtx" type="number" class="form-control" name="diemtbgdtx" placeholder="Điểm trung bình cả năm"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input min="0" max="10"onblur="if(this.value>2)this.value=2" id="diemkkgdtx" type="number" class="form-control" name="diemkkgdtx" placeholder="Điểm khuyến khích">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input onblur="if(this.value>0.5)this.value=0.5" id="diemutgdtx" type="number" class="form-control" name="diemutgdtx" placeholder="Điểm ưu tiên"></div>
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input min="0" max="10"onblur="if(this.value>0.5)this.value=0.5" id="diemutgdtx" type="number" class="form-control" name="diemutgdtx" placeholder="Điểm ưu tiên"></div>
     <br />
     </div>
     </div> <button type="button" class="btn btn-success btn-block" onclick="tinhxuoiigdtx()" data-toggle="modal" data-target="#tinhxuoi0gdtx">Tính</button>
@@ -93,11 +93,11 @@ thumbnail-img: https://znews-photo.zadn.vn/w660/Uploaded/mdf_drkydd/2019_06_26/6
     </div>
     <div class="tab-pane fade" id="gdtx-tn" role="tabpanel" aria-labelledby="gdtx-tn-tab">
     <form>
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input onblur="if(this.value>10)this.value=10" id="diemtbngdtx" type="number" class="form-control" name="diemtbngdtx" placeholder="Điểm trung bình cả năm">
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input min="0" max="10"onblur="if(this.value>10)this.value=10" id="diemtbngdtx" type="number" class="form-control" name="diemtbngdtx" placeholder="Điểm trung bình cả năm">
     </div><br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input onblur="if(this.value>2)this.value=2" id="diemkkngdtx" type="number" class="form-control" name="diemkkngdtx" placeholder="Điểm khuyến khích"></div>
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input min="0" max="10"onblur="if(this.value>2)this.value=2" id="diemkkngdtx" type="number" class="form-control" name="diemkkngdtx" placeholder="Điểm khuyến khích"></div>
     <br />
-    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input onblur="if(this.value>0.5)this.value=0.5" id="diemutngdtx" type="number" class="form-control" name="diemutngdtx" placeholder="Điểm ưu tiên"></div><br />
+    <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input min="0" max="10"onblur="if(this.value>0.5)this.value=0.5" id="diemutngdtx" type="number" class="form-control" name="diemutngdtx" placeholder="Điểm ưu tiên"></div><br />
     <button type="button" class="btn btn-success btn-block" onclick="tinhnguoccgdtx()" data-toggle="modal" data-target="#tinhnguoc0gdtx">Tính</button>
     </form>
     </div>
