@@ -15,6 +15,7 @@ author: Tuan Truong
 
 navbar-links:
   Tạo ảnh đẹp: "https://www.taoanhdep.com"
+  Công cụ: "../tools"
 
 
 # --- Logo --- #
@@ -179,7 +180,7 @@ fb_comment_id: "848423801920077"
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
-#fb_app_id: ""
+fb_app_id: "848423801920077"
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
