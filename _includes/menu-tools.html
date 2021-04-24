@@ -1,0 +1,34 @@
+<script type='text/javascript'>
+    //<![CDATA[
+    var danhmuc = [
+    {
+    name: "Tính điểm tốt nghiệp",
+    url: "/tinh-diem-tot-nghiep-thpt"
+    },
+    {
+    name: "Tạo mã QR Online",
+    url: "/tao-ma-qr"
+    },
+    ]
+      //]]>
+</script>
+<div class="tad-container"><div class="container">
+<div class='bg-white danhmuc flex-nowrap overflow-auto p-3 row' id='tad-danhmuc'>
+</div></div></div>
+
+<script type='text/javascript'>
+//<![CDATA[
+var taddanhmuc = document.getElementById("tad-danhmuc");
+danhmuc.forEach(function(danhmuc) {
+
+ var dm = document.createElement('div');;
+ dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"'><div>"+danhmuc.name+"</div></a></div>";
+ 
+
+taddanhmuc.appendChild(dm);
+
+});
+
+//]]>
+</script>
+

@@ -32,4 +32,12 @@ body, .bg {
         overflow: hidden;
         margin: 10px 0 10px 10px;
         border-radius: .25rem;
+    }.tad-container .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }.danhmuc>div {
+        -ms-flex: none;
+        flex: none;
+        padding-left: 0;
+        padding-right: 15px;
     }
