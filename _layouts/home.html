@@ -4,10 +4,13 @@ layout: default
 
 {{ content }}
 
+{% include ads0.html %}
+
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="row row-cols-1 row-cols-lg-2">
+<div class="row row-cols-1 row-cols-lg-3 row-cols-md-2">
   {% for post in posts %}
+  <a href="{{ post.url | absolute_url }}" class="text-decoration-none">
   <article class="post-preview col">
 
     {%- capture thumbnail -%}
@@ -34,18 +37,19 @@ layout: default
     {% endif %}
     {% endif %}
 
-    <div class="media">
-      
-      {% if thumbnail != "" %}
+<div class="media">
+  
+{% if thumbnail != "" %}
       <div class="post-thumb">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+    
   <img width="75" height="75" src="{{ thumbnail | absolute_url }}" alt="{{ post.title }}">
-</a>
+
+
 </div>
   {% endif %}
  
   <div class="media-body">
-    <a href="{{ post.url | absolute_url }}" class="text-body"><h2 class="post-title">{{ post.title }}</h2></a>
+ <h2 class="post-title">{{ post.title }}</h2>
   <h3 class="post-subtitle">{{ post.subtitle }}
   </h3>
  
@@ -54,7 +58,7 @@ layout: default
 
 </div>
 
-   </article>
+   </article></a>
   {% endfor %}
 </div>
 
@@ -72,3 +76,6 @@ layout: default
   {% endif %}
 </ul>
 {% endif %}
+
+
+{% include ads1.html %}

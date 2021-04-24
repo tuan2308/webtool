@@ -8,15 +8,16 @@ body, .bg {
     position: relative;
     background: #fff;
     height: 100%;
-    border:1px solid #ddd;
     overflow: hidden;
     text-decoration: none;
     border-radius: .25rem;
+    border: 0;
+    box-shadow: 0 0 10px 0 rgb(31 45 65 / 15%);
 }
 .post-preview h2 {
     font-size: 20px;
+    color: #323f52;
 }
-
 .post-preview h3 {
     font-size: 15px;color: #777;
 }

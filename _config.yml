@@ -29,7 +29,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+title-img: "../assets/img/settings.svg"
 
 
 # --- Footer social media links --- #
@@ -189,7 +189,7 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-paginate: 10
+paginate: 12
 
 kramdown:
   input: GFM
