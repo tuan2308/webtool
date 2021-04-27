@@ -2,11 +2,14 @@
 layout: base
 ---
 
-{% include header.html type="post" %}
 
 <div class="container">
+  
   <div class="card mb-3">
     <div class="card-body">
+      {% include header.html type="post" %}
+
+      {% include ads1.html %}
 
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}

@@ -4,9 +4,11 @@ layout: base
 
 
 <div class="container" role="main">
-  {% include ads0.html %}
   <div class="card mb-3">
     <div class="card-body">
+      {% include header.html type="page" %}
+      {% include ads0.html %}
+      
       {% if page.before-content %}
         <div class="before-content">
           {% for file in page.before-content %}

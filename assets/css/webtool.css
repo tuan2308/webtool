@@ -26,7 +26,7 @@ body{overflow-x: hidden;}
 .post-preview .media-body {
     padding: 10px;
 }.post-preview img {
-    width: 75px;height: 75px;
+    width: 100px;height: 100px;
     object-fit: cover;
 }
 .post-thumb {
