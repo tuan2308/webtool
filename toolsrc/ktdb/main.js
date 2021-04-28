@@ -35,8 +35,8 @@ function copyToClipboardText(e) {
     inputc.select();
     document.execCommand('copy');
 
-    $(".input-group-btn .btn").html("Sao chép");
+//     $(".input-group-btn .btn").html("Sao chép");
 
-e.innerHTML = "Đã sao chép";
+// e.innerHTML = "Đã sao chép";
 }
 
