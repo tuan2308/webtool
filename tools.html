@@ -19,7 +19,7 @@ title: 'Danh sách công cụ'
 <div>
 {%- for tag in tags_list -%}
     <h2 id="{{- tag -}}" class="linked-section">
-       Công cụ&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+       {{- tag -}}&nbsp;({{site.tags[tag].size}})
     </h2>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
