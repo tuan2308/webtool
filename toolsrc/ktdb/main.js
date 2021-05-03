@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('#result').empty();
 
         var postForm = {
-            'text'     : $('textarea[name=text]').val(),
+            'text'     : $('input[name=text]').val(),
             'canhtrai'     : $('select[name=canhtrai]').val(),
             'canhphai'     : $('select[name=canhphai]').val(),
             'canhgiua'     : $('select[name=canhgiua]').val()
