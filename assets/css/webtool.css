@@ -1,10 +1,10 @@
 html {
     overflow-x: hidden;
 }
-body{
+body {
     background-color: #eee;
-    overflow-x: hidden;
-    }
+    padding: 0 !important;
+}
     header h1 {
     font-size: 2rem;
     }h2 {
