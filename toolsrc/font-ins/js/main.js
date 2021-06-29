@@ -77,7 +77,7 @@ var populateClipboardFromLocalstorage = function() {
     var clipboard = localStorage.yt_clipboard ? JSON.parse(localStorage.yt_clipboard) : [];
     $('.clipboard .history').html('');
     $.each(clipboard, function(i, data) {
-        $el = $('<div class="history_item"><div class="text"><div class="copy_button">Copy</div></div><div class="meta"></div></div>');
+        $el = $('<div class="history_item"><div class="text"><div class="copy_button"><i class="far fa-copy"></i></div></div><div class="meta"></div></div>');
         $('.text', $el).append(data.text);
         $('.meta', $el).append(new Date(data.date).toLocaleString() + " &mdash; " + data.transform);
         $('.clipboard .history').prepend($el);
