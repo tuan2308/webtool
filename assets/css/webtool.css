@@ -58,6 +58,16 @@ body, .bg {    padding: 0 !important;
     border: 0;
     background-color: rgba(0,0,0,.05);
     }
+    .phongtoanh, .chonmau .fas.fa-search-plus {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #fff;
+        text-shadow: 1px 1px 3px #333;
+    }.tad-demoanh a, .chonmau a {
+        position: relative;
+        display: inline-block;
+    }
     @media only screen and (max-width: 768px) {
     .container {
     padding: 0;
