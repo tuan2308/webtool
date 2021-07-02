@@ -1,5 +1,6 @@
-if (window.location.hostname == lh || window.location.hostname == wt) {
+
     $(document).ready(function() {
+        if (window.location.hostname == lh || window.location.hostname == wt) {
     $('#submit').click(function() {
     var link = $('#link').val();
     if (!link) {
@@ -76,7 +77,15 @@ if (window.location.hostname == lh || window.location.hostname == wt) {
     }
   });
   
-  function coppy() {
+
+  function isUrlValid(link) {
+    var res = link.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+    if (res == null)
+        return !1;
+    else return !0
+  };
+} });
+function coppy() {
     var copyText = document.getElementById('idfacebook');
     copyText.select();
     copyText.setSelectionRange(0, 99999);
@@ -84,11 +93,3 @@ if (window.location.hostname == lh || window.location.hostname == wt) {
    alert("Sao chép thành công !")
   };
   
-  function isUrlValid(link) {
-    var res = link.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
-    if (res == null)
-        return !1;
-    else return !0
-  };
-    });
-}

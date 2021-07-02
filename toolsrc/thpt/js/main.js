@@ -1,5 +1,6 @@
-if (window.location.hostname == lh || window.location.hostname == wt) {
+
     $(document).ready(function() {
+        if (window.location.hostname == lh || window.location.hostname == wt) {
         $("#wt-tinhxuoi").submit(function(p) {
             var q = document.getElementById("diemtoan").value;
             var r = document.getElementById("diemvan").value;
@@ -79,5 +80,4 @@ if (window.location.hostname == lh || window.location.hostname == wt) {
             k.preventDefault();
             $("#tinhnguoc0gdtx").modal("show")
         })
-    });
-}
+    } });
