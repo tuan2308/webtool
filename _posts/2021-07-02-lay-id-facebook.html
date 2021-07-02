@@ -21,6 +21,12 @@ Công cụ tìm id facebook một cách đơn giản và nhanh chóng. Công c�
 <div id="result"></div>
 <script src="../toolsrc/id-fb/main.js"></script>
 
-
+<script>function coppy() {
+    var copyText = document.getElementById('idfacebook');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+   alert("Sao chép thành công !")
+  };</script>
 
 

@@ -85,11 +85,5 @@
     else return !0
   };
 } });
-function coppy() {
-    var copyText = document.getElementById('idfacebook');
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-   alert("Sao chép thành công !")
-  };
+
   
