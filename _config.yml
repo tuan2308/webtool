@@ -17,8 +17,12 @@ author: Tuan Truong
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+
   Tạo ảnh đẹp: "https://www.taoanhdep.com"
-  Danh sách công cụ: "../tools"
+  
+  Giới thiệu: "../gioi-thieu"
+  Liên hệ: "../lien-he"
+  Danh sách công cụ: "../cong-cu"
 
 
 # --- Logo --- #
