@@ -13,7 +13,11 @@
       alert("Vui lòng nhập link facebook !");
       $('#link').focus();
     } else {
-        $('#submit').prop('disabled', !0);
+
+
+        $('#submit').prop('disabled', !0).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...');
+
+
         var idfacebook = null;
         var post = link.match(/(.*)\/posts\/([0-9]{8,})/);
         var photo = link.match(/(.*)\/photo.php\?fbid=([0-9]{8,})/);
@@ -64,13 +68,13 @@
                 if (res.data.id == '') {
                    alert("Không tìm thấy ID !")
                 } else {
-                    $('#submit').prop('disabled', !1);
+                    $('#submit').prop('disabled', !1).html('<i class="fa fa-search"></i> Lấy ID ngay');
                     $('#result').html('<label class="mt-2">Kết quả: </label><div class="input-group"><input type="text" id="idfacebook" class="form-control text-primary" value="'+ res.data.id +'" style="font-weight:bold"><div class="input-group-append"><button class="btn btn-primary" onclick="coppy()">Sao chép</button></div></div>');
                    alert("Get ID Thành Công !")
                 }
             })
         } else {
-            $('#submit').prop('disabled', !1);
+            $('#submit').prop('disabled', !1).html('<i class="fa fa-search"></i> Lấy ID ngay');
             $('#result').html('<label class="mt-2">Kết quả: </label><div class="input-group"><input type="text" id="idfacebook" class="form-control text-primary" value="'+ idfacebook +'" style="font-weight:bold"><div class="input-group-append"><button class="btn btn-primary" onclick="coppy()">Sao chép</button></div></div>');
             alert("Get ID Thành Công !")
         }
