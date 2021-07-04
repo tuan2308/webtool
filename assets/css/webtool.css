@@ -68,8 +68,8 @@ body, .bg {    padding: 0 !important;
         position: relative;
         display: inline-block;
     }
-    @media only screen and (max-width: 768px) {
+    /* @media only screen and (max-width: 768px) {
     .container {
     padding: 0;
     }
-    }
+    } */
