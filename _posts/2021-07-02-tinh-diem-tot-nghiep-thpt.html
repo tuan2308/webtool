@@ -20,6 +20,17 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
 <a class="dropdown-item" id="gdtx-tn-tab" data-toggle="tab" href="#gdtx-tn" role="tab" aria-controls="gdtx-tn" aria-selected="true" aria-expanded="true">Tính ngược</a>
 </div>
 </li>
+
+<li class="nav-item">
+<a class="nav-link" id="hd-tab" data-toggle="tab" href="#hd" role="tab" aria-controls="hd" aria-selected="false">Hướng dẫn</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" id="dk-tab" data-toggle="tab" href="#dk" role="tab" aria-controls="dk" aria-selected="true">Điều kiện</a>
+</li>
+
+
+
 </ul>
 <div class="content">
     <div class="tab-content" id="myTabContent">
@@ -52,13 +63,13 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
         </form>
         </div>
         <div class="tab-pane fade" id="tn" role="tabpanel" aria-labelledby="tn-tab">
-        <form id="wt-tinhnguoc">
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtbn" type="number" class="form-control" name="diemtbn" required="" placeholder="Điểm trung bình cả năm"></div>
-        <br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>4)this.value=4" id="diemkkn" type="number" class="form-control" name="diemkkn" placeholder="Điểm khuyến khích"></div><br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>2.75)this.value=2.75" id="diemutn" type="number" class="form-control" name="diemutn" placeholder="Điểm ưu tiên"></div><br>
-        <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
-        </form>
+            <form id="wt-tinhnguoc">
+                <label>Điểm trung bình cả năm</label><div class="mb-3">  <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtbn" type="number" class="form-control" name="diemtbn" required="" placeholder="Điểm trung bình cả năm"></div>
+                
+                <div class="mb-3 row"><div class="col-lg-6">  <label>Điểm khuyến khích (Nếu có)</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>4)this.value=4" id="diemkkn" type="number" class="form-control" name="diemkkn" placeholder="Điểm khuyến khích"></div><div class="col-lg-6">  <label>Điểm ưu tiên (Nếu có)</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>2.75)this.value=2.75" id="diemutn" type="number" class="form-control" name="diemutn" placeholder="Điểm ưu tiên"></div></div>
+        
+                <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
+                </form>
         </div>
         <div class="tab-pane fade" id="gdtx-tx" role="tabpanel" aria-labelledby="gdtx-tx-tab">
         <form id="wt-tinhxuoi-gdtx">
@@ -88,13 +99,111 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
         <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
         </form>
         </div>
+
+
+        <div class="tab-pane fade" id="hd" role="tabpanel" aria-labelledby="hd-tab">
+            <center><h3>HƯỚNG DẪN  VỀ  CÁC DIỆN  ƯU TIÊN VÀ ĐIỂM KHUYẾN KHÍCH</h3></center> 
+
+ 
+
+            <i><h5>I. DIỆN ƯU TIÊN XÉT TỐT NGHIỆP <small>Thí sinh thuộc một trong các diện:</small></h5></i>
+            <u>Diện 1:</u> Không được cộng điểm ưu tiên.<br/>
+            
+            Còn gọi là diện bình thường. (Ký hiệu: D1)<br/>
+            
+            <u>Diện 2:</u> cộng 0,25 điểm đối với thí sinh thuộc một trong những đối tượng sau:<br/>
+            
+            a) - Thương binh, bệnh binh, người được hưởng chính sách như thương binh, bệnh binh mất sức lao động dưới 81% (chỉ với GDTX); Con của thương binh, bệnh binh, người được hưởng chính sách như thương binh, bệnh binh bị suy giảm khả năng lao động dưới 81%; Anh hùng lực lượng vũ trang nhân dân, Anh hùng lao động;   (Ký hiệu: D2-TB2)
+            <br/>
+            - Con Anh hùng LLVT, con Anh hùng lao động, con Bà mẹ VN Anh hùng  (Ký hiệu: D2-CAH)
+            <br/>
+            - Người dân tộc thiểu số;  (Ký hiệu:  D2-TS2)
+            <br/>
+            - Người Kinh, người nước ngoài cư trú tại Việt Nam có hộ khẩu thường trú từ 3 năm trở lên (tính đến ngày tổ chức kỳ thi) ở xã đặc biệt khó khăn, xã biên giới, xã an toàn khu thuộc diện đầu tư của chương trình 135; ở xã đặc biệt khó khăn vùng bãi ngang ven biển và hải đảo theo quy định hiện hành của Thủ tướng Chính phủ; ở thôn đặc biệt khó khăn, xã khu vực I, II, III thuộc vùng dân tộc và miền núi theo quy định hiện hành của Ủy ban Dân tộc, học tại các trường phổ thông không nằm trên địa bàn các quận nội thành của các thành phố trực thuộc Trung ương ít nhất 2 phần 3 thời gian học cấp THPT;   (Ký hiệu:  D2-VS2)
+            <br/>
+            - Người bị nhiễm chất độc màu da cam; con của người bị nhiễm chất độc màu da cam; con của người hoạt động kháng chiến bị nhiễm chất độc hóa học; người được cơ quan có thẩm quyền công nhận bị dị dạng, dị tật, suy giảm khả năng tự lực trong sinh hoạt hoặc lao động do hậu quả của chất độc hoá học;   (Ký hiệu:    D2-CHH)
+            <br/>
+            - Con của người hoạt động cách mạng trước Tổng khởi nghĩa 19 tháng 8 năm 1945 (đối với GDTX); (Ký hiệu:  D2-CCM)
+            <br/>
+            - Có tuổi đời từ 35 tuổi trở lên, tính đến ngày thi.  (Ký hiệu:  D2-T35)
+            <br/>
+            <u>Diện 3:</u> cộng 0,5 điểm đối với thí sinh thuộc một trong những đối tượng sau:
+            <br/>
+            - Người dân tộc thiểu số, bản thân có hộ khẩu thường trú ở xã đặc biệt khó khăn, xã biên giới, xã an toàn khu thuộc diện đầu tư của chương trình 135; ở xã đặc biệt khó khăn vùng bãi ngang ven biển và hải đảo theo quy định hiện hành của Thủ tướng Chính phủ; ở thôn đặc biệt khó khăn, xã khu vực I, II, III thuộc vùng dân tộc và miền núi theo quy định hiện hành của Ủy ban Dân tộc, đang học tại các trường phổ thông dân tộc nội trú hoặc các trường phổ thông không nằm trên địa bàn các quận nội thành của các thành phố trực thuộc Trung ương;  (Ký hiệu:   D3-TS3)
+            <br/>
+            - Thương binh, bệnh binh, người hưởng chính sách như thương binh, bệnh binh bị suy giảm khả năng lao động từ 81% trở lên (đối với GDTX);  (Ký hiệu:  D3-TB3)
+            <br/>
+            - Con của liệt sĩ; con của thương binh, bệnh binh, người được hưởng chính sách như thương binh, bệnh binh bị suy giảm khả năng lao động từ 81% trở lên.  (Ký hiệu:  D3-CLS)
+            <br/>
+            *  Học sinh có nhiều tiêu chuẩn ưu tiên thì chỉ hưởng theo tiêu chuẩn cao nhất.
+            <br/>
+             
+            
+            <h5>II. ĐIỂM KHUYẾN KHÍCH:</h5>
+            1. Đạt giải cá nhân kỳ thi học sinh giỏi bộ môn văn hoá lớp 12:
+            <br/>
+            - Giải nhất, nhì, ba cấp quốc gia hoặc giải nhất cấp tỉnh:  2,0 điểm.
+            <br/>
+            - Giải khuyến khích cấp quốc gia hoặc giải nhì cấp tỉnh:  1,5 điểm.
+            <br/>
+            - Giải ba cấp tỉnh:  1,0 điểm.
+            <br/>
+            2. Đoạt giải cá nhân và đồng đội trong các kỳ thi thí nghiệm thực hành môn Vật lí, Hoá học, Sinh học; thi văn nghệ; thể dục thể thao; hội thao giáo dục quốc phòng; cuộc thi khoa học kỹ thuật; viết thư quốc tế do ngành Giáo dục phối hợp với các ngành chuyên môn từ cấp tỉnh trở lên tổ chức ở cấp THPT:
+            <br/>
+            - Đoạt giải nhất, nhì, ba quốc gia hoặc giải nhất cấp tỉnh hoặc Huy chương Vàng:   2,0 điểm.
+            <br/>
+            - Giải khuyến khích quốc gia hoặc giải nhì cấp tỉnh hoặc Huy chương Bạc:     1,5 điểm.
+            <br/>
+            - Giải ba cấp tỉnh hoặc Huy chương Đồng:   1,0 điểm.
+            <br/>
+            * Giải đồng đội chỉ tính cho giải quốc gia, mức điểm cộng thêm giống như giải cá nhân.
+            <br/>
+            * Học sinh đạt nhiều giải khác nhau thì chỉ được hưởng mức cộng điểm của giải cao nhất.
+            <br/>
+            3. Được cấp Giấy chứng nhận nghề:
+            <br/>
+            - Loại giỏi:  2,0 điểm.
+            <br/>
+            - Loại khá:  1,5 điểm.
+            <br/>
+            - Loại trung bình:  1,0 điểm.         
+            <br/>
+            4. Nếu học viên GDTX có chứng chỉ Ngoại ngữ A hoặc Tin học A trở lên (kể cả kỹ thuật viên): được cộng thêm 1,0 điểm cho mỗi loại chứng chỉ.
+            <br/>
+            * Điểm khuyến khích tối đa của các mục 1,2,3,4 trên không quá 4,0 điểm.
+            <br/>
+            * Điểm khuyến khích quy định của các mục 1,2,3,4  trên được bảo lưu trong toàn cấp học./.<br/>
+            <p style="float:right"> Theo thiquocgia.vn</p>
+            </div>
+
+            <div class="tab-pane fade" id="dk" role="tabpanel" aria-labelledby="dk-tab">
+                <center><h3>Điều kiện đỗ tốt nghiệp THPT</h3></center>
+
+                Thí sinh cần đảm bảo đủ các điều kiện dưới đây để được công nhận đỗ tốt nghiệp THPT:
+                <br/>
+                Một là, thí sinh tham gia kỳ thi THPT Quốc gia, không vi phạm kỷ luật ở hình thức hủy bài thi, điểm các môn thi thành phần của tổ hợp xét điểm không có môn nào dưới điểm 1.0 (tính theo thang điểm 10)
+                <br/>
+                Hai là, điểm trung bình xét tốt nghiệp phải đạt 5 điểm trở lên.
+                <br/>
+                Với những thí sinh không đạt 5 điểm, sẽ không được thi lại vào các đợt tiếp theo mà phải đợi đến kỳ thi THPT Quốc gia năm tới.
+                <br/>
+                Điểm liệt của mỗi bài thi (tính theo thang điểm 10) là từ 1 điểm trở xuống.
+                <br/>
+                Lưu ý để đạt điểm cao trong kỳ thi THPT Quốc gia
+                <br/>
+                Năm 2018, kỳ thi THPT Quốc gia sẽ nặng hơn năm 2017 vì bao gồm cả kiến thức của lớp 11 và 12 theo tỷ lệ 30:70, vì thế để đạt được điểm cao học sinh cần có phương pháp học tập đúng, phân phối thời gian hợp lý tránh tình trạng học lệch.
+                <br/><p style="float:right"> Theo thiquocgia.vn</p>
+                
+            </div>
+
+
         </div>
 <div class="modal fade" id="tinhxuoi0" aria-hidden="true" style="display:none">
 <div class="modal-dialog modal-dialog-centered">
 <div class="modal-content">
 <div class="modal-header">
 <h4 class="modal-title">Kết quả</h4>
-<button type="button" class="close" data-dismiss="modal">×</button>
+<button type="button" class="btn-close" data-dismiss="modal"></button>
 </div>
 <div class="modal-body"> <span id="tinhxuoi">Bạn đã trượt tốt nghiệp do có 1 môn dưới hoặc bằng 1!</span><br> <span id="tinhxuoi2"></span>
 </div>
@@ -107,7 +216,7 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
 <div class="modal-content">
 <div class="modal-header">
 <h4 class="modal-title">Kết quả</h4>
-<button type="button" class="close" data-dismiss="modal">×</button>
+<button type="button" class="btn-close" data-dismiss="modal"></button>
 </div>
 <div class="modal-body"><span id="tinhnguoc"></span>
 </div>
@@ -120,7 +229,7 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
 <div class="modal-content">
 <div class="modal-header">
 <h4 class="modal-title">Kết quả</h4>
-<button type="button" class="close" data-dismiss="modal">×</button>
+<button type="button" class="btn-close" data-dismiss="modal"></button>
 </div>
 <div class="modal-body"><span id="tinhxuoigdtx"></span><br><span id="tinhxuoi2gdtx"></span>
 </div>
@@ -133,7 +242,7 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
 <div class="modal-content">
 <div class="modal-header">
 <h4 class="modal-title">Kết quả</h4>
-<button type="button" class="close" data-dismiss="modal">×</button>
+<button type="button" class="btn-close" data-dismiss="modal"></button>
 </div>
 <div class="modal-body"><span id="tinhnguocgdtx"></span>
 </div>
@@ -141,20 +250,8 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
 </div>
 </div>
 </div>
-<div class="card mb-3 mt-3">
-<div class="card-header">
-<center>Một số thông tin cần lưu ý</center>
 </div>
-<div class="card-body"> <b>Điểm khuyến khích là gì?</b><br>-Điểm nghề<br>-Đạt giải cá nhân kỳ thi
-học sinh giỏi...<br>-Đoạt giải cá nhân và đồng đội trong các kỳ thi thí nghiệm thực
-hành...<br>-Học viên GDTX có chứng chỉ Ngoại ngữ A hoặc Tin học A trở lên...<br>Xem thêm
-<br><br><b>Điểm ưu tiên là gì?</b><br>-Diện 1: Không được cộng
-điểm ưu tiên<br>-Diện 2: Cộng 0,25 điểm đối với thí sinh thuộc một trong những đối
-tượng...<br>-Diện 3: Cộng 0,5 điểm đối với thí sinh thuộc một trong những đối tượng...<br>Xem
-thêm  <br>
-</div>
-</div>
-</div>
+<br/>
 Ngoài ra, thí sinh có thể tự tính điểm tốt nghiệp THPT bằng công thức dưới đây của Bộ, công thức tính điểm như sau:
 <img src="/toolsrc/thpt/tinh-diem-tot-nghiep.jpeg" class="img-fluid" alt="Tính điểm tốt nghiệp thpt"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
