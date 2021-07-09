@@ -1,5 +1,5 @@
-<div role="main" class="container">
-<nav class="mb-3 bg-white navbar navbar-expand-lg navbar-light {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
+<div role="main" class="container-md">
+<nav class="mb-3 card navbar navbar-expand-lg navbar-light {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 <div class="container">
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" width="32" height="32" class="align-bottom" src="{{ site.title-img | relative_url}}"/> {{ site.title }}</a>

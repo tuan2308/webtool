@@ -15,8 +15,8 @@ layout: default
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="card">
-<div class="card-body">
+<div class="card post-home">
+<div class="card-body row row-cols-2">
 
   {% for post in posts %}
  
@@ -46,7 +46,7 @@ layout: default
     {% endif %}
     {% endif %}
 
-<div class="media mb-3">
+<div class="d-flex mb-3">
   
 {% if thumbnail != "" %}
       <div class="post-thumb mr-3">
@@ -57,13 +57,10 @@ layout: default
 </div>
   {% endif %}
  
-  <div class="media-body">
     
- <h2 class="m-0"><a href="{{ post.url | absolute_url }}" class="text-decoration-none">{{ post.title }}</a></h2>
+ <h2><a href="{{ post.url | absolute_url }}" class="text-decoration-none">{{ post.title }}</a></h2>
 
- 
 
-</div>
 
 </div>
 
