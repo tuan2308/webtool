@@ -1,0 +1,134 @@
+---
+layout: page
+title: Resize Image - thay đổi kích thước hình ảnh online
+tags: [Chỉnh sửa ảnh]
+thumbnail-img:
+https://1.bp.blogspot.com/-G6zilI0H_Os/YFAb4Pn62gI/AAAAAAAAqBA/jzcuXmxAdocunty9m6NBfyAsT-AT7EEnACNcBGAsYHQ/s300/taoanhdep--resize-image.jpg
+---
+
+<p>Công cụ thay đổi kích thước hình ảnh online - Resize Image Online giúp các bạn thay đổi kích cỡ hình ảnh lớn hơn để
+    up lên facebook cho ảnh rõ nét hoặc nhỏ hơn để up lên web để có tốc độ load nhanh tuỳ ý bạn một cách nhanh chóng và
+    đơn giản.
+    <br /><b>Hướng dẫn:</b><br />- Nhấn vào ô bên dưới để tải ảnh mà bạn cần thay đổi kích thước<br />Cách 1: Nhập chiều
+    rộng và chiều cao theo ý muốn của bạn (đơn vị pixel)<br /><i>Nếu như bạn chỉ nhập riêng chiều rộng thì chiều cao nó
+        sẽ lấy tỷ lệ tương ứng và ngược lại</i><br />Cách 2: Nhập tỷ lệ ảnh theo ý muốn của bạn (đơn vị %)<br />- Nhấn
+    nút <b>Resize ảnh</b><br />
+    - Nhấn nút <b>Tải ảnh về</b> hoặc giữ vào ảnh 3 giây để lưu ảnh.<br />
+</p>
+<style>
+    .dropzone {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 150px;
+        border: dashed 3px #aed5ff
+    }
+
+    .dropzone.dropzone-active {
+        border-style: solid;
+        border-color: #007bff
+    }
+
+    .dropzone input {
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0
+    }
+
+    .dropzone i {
+        color: #007bff;
+        font-size: 45px;
+    }
+
+    .dropzone p {
+        text-align: center;
+        margin-top: 10px;
+        color: #224856;
+        cursor: default;
+        font-size: 17px
+    }
+
+    .opacity-animation {
+        opacity: 0;
+        transition: opacity 100ms 0s linear
+    }
+
+    .opacity-animation:not(.active) {
+        display: none
+    }
+
+    .opacity-animation.animation-active {
+        opacity: 1
+    }
+    
+</style>
+<a name='more'></a>
+<div class="dropzone opacity-animation active animation-active">
+    <input type="file" accept="image/*" />
+    <i class="fas fa-cloud-upload-alt"></i>
+    <p>Nhấp hoặc kéo hình ảnh của bạn vào đây...</p>
+</div>
+<div class="resize img-container opacity-animation">
+    <div class="settings mb-3">
+        <div class="row">
+            <div class="col-lg-6 mb-2"><label>
+                    <span>Chiều rộng</span></label>
+                <div class="input-group"><input type="number" spellcheck="false" placeholder="Nhập số" model="width"
+                        class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">px</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-2"><label>
+                    <span>Chiều cao</span> </label>
+                <div class="input-group">
+                    <input type="number" spellcheck="false" placeholder="Nhập số" model="height" class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label>
+            <span>Tỷ lệ</span> </label>
+        <div class="input-group mb-3">
+            <input type="number" spellcheck="false" placeholder="Nhập số" model="scale" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">%</span>
+            </div>
+        </div>
+    </div>
+    <div class="buttons text-center mb-3">
+        <button class="button btn btn-lg btn-primary mb-2" function="resize">Resize ảnh</button>
+        <button class="button btn btn-lg btn-secondary mb-2" function="cancel">Huỷ</button>
+    </div>
+    <label>Ảnh gốc:</label><br />
+    <img alt="Tạo ảnh đẹp" class="img-thumbnail" />
+</div>
+<div class="download img-container opacity-animation">
+    <div class="buttons text-center mb-3">
+        <button class="button btn btn-lg btn-primary mb-2" function="upload">Upload ảnh</button>
+        <a class="button btn btn-lg btn-primary tad-taianhve mb-2" href="#">Tải ảnh về</a>
+        <button class="button btn btn-lg btn-secondary mb-2" function="back">Quay lại</button>
+    </div>
+    <label>Ảnh đã reszie:</label><br />
+    <img alt="Tạo ảnh đẹp" class="img-thumbnail img-out" />
+</div>
+<script src="https://cdn.taoanhdep.com/tad-resize.js"></script>
+<script>
+    $(".tad-taianhve").click(function () {
+
+        const imgout = $(".img-out").attr("src");
+
+        $(this).attr("href", imgout).attr("download", "taoanhdep--resize.jpeg");
+    });
+</script>
