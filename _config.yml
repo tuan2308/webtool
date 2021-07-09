@@ -195,7 +195,7 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-paginate: 12
+paginate: 10
 
 kramdown:
   input: GFM
