@@ -73,32 +73,42 @@ Kỳ thi tốt nghiệp THPT 2021 sắp đến, nhiều thí sinh còn băn kho�
                 </form>
         </div>
         <div class="tab-pane fade" id="gdtx-tx" role="tabpanel" aria-labelledby="gdtx-tx-tab">
-        <form id="wt-tinhxuoi-gdtx">
-        <div class="row">
-        <div class="col-sm-6">
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT1</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtoangdtx" type="number" class="form-control" name="diemtoangdtx" required="" placeholder="Điểm bài thi 1"></div><br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT2</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemvangdtx" type="number" class="form-control" name="diemvangdtx" required="" placeholder="Điểm bài thi 2"></div><br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">BT3</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemanhgdtx" type="number" class="form-control" name="diemanhgdtx" required="" placeholder="Điểm bài thi 3"></div><br>
-        </div>
-        <div class="col-sm-6">
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtbgdtx" type="number" class="form-control" name="diemtbgdtx" required="" placeholder="Điểm trung bình cả năm"></div><br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>4)this.value=4" id="diemkkgdtx" type="number" class="form-control" name="diemkkgdtx" placeholder="Điểm khuyến khích">
-        </div><br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>2.75)this.value=2.75" id="diemutgdtx" type="number" class="form-control" name="diemutgdtx" placeholder="Điểm ưu tiên"></div>
-        <br>
-        </div>
-        </div> <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
-        </form>
+            <form id="wt-tinhxuoi-gdtx">
+                <div class="row">
+                <div class="col-lg-6">
+                <div class="mb-3">  <label>Điểm bài thi 1</label>
+                <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtoangdtx" type="number" class="form-control" name="diemtoangdtx" required="" placeholder="Điểm bài thi 1"></div>
+                <div class="mb-3">  <label>Điểm bài thi 2</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemvangdtx" type="number" class="form-control" name="diemvangdtx" required="" placeholder="Điểm bài thi 2"></div>
+                <div class="mb-3">  <label>Điểm bài thi 3</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemanhgdtx" type="number" class="form-control" name="diemanhgdtx" required="" placeholder="Điểm bài thi 3"></div>
+                </div>
+                <div class="col-lg-6">
+                <div class="mb-3">  <label>Điểm trung bình cả năm</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtbgdtx" type="number" class="form-control" name="diemtbgdtx" required="" placeholder="Điểm trung bình cả năm"></div>
+                <div class="mb-3">  <label>Điểm khuyến khích (Tuỳ chọn)</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>4)this.value=4" id="diemkkgdtx" type="number" class="form-control" name="diemkkgdtx" placeholder="Điểm khuyến khích">
+                </div>
+                <div class="mb-3">  <label>Điểm ưu tiên (Tuỳ chọn)</label><input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>2.75)this.value=2.75" id="diemutgdtx" type="number" class="form-control" name="diemutgdtx" placeholder="Điểm ưu tiên"></div>
+                
+                </div>
+                </div> <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
+                </form>
         </div>
         <div class="tab-pane fade" id="gdtx-tn" role="tabpanel" aria-labelledby="gdtx-tn-tab">
-        <form id="wt-tinhnguoc-gdtx">
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">TB</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtbngdtx" type="number" required="" class="form-control" name="diemtbngdtx" placeholder="Điểm trung bình cả năm">
-        </div><br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">KK</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>4)this.value=4" id="diemkkngdtx" type="number" class="form-control" name="diemkkngdtx" placeholder="Điểm khuyến khích"></div>
-        <br>
-        <div class="input-group"> <span class="input-group-prepend"><span class="input-group-text">ƯT</span></span> <input step="0.01" min="0" max="10" onblur="if(this.value<0)this.value=0;if(this.value>2.75)this.value=2.75" id="diemutngdtx" type="number" class="form-control" name="diemutngdtx" placeholder="Điểm ưu tiên"></div><br>
-        <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
-        </form>
+            <form id="wt-tinhnguoc-gdtx">
+                <label>Điểm trung bình cả năm</label>
+                <div class="mb-3"> <input step="0.01" min="0" max="10"
+                        onblur="if(this.value<0)this.value=0;if(this.value>10)this.value=10" id="diemtbngdtx" type="number"
+                        class="form-control" name="diemtbngdtx" required="" placeholder="Điểm trung bình cả năm"></div>
+            
+                <div class="mb-3 row">
+                    <div class="col-lg-6"> <label>Điểm khuyến khích (Nếu có)</label><input step="0.01" min="0" max="10"
+                            onblur="if(this.value<0)this.value=0;if(this.value>4)this.value=4" id="diemkkngdtx" type="number"
+                            class="form-control" name="diemkkngdtx" placeholder="Điểm khuyến khích"></div>
+                    <div class="col-lg-6"> <label>Điểm ưu tiên (Nếu có)</label><input step="0.01" min="0" max="10"
+                            onblur="if(this.value<0)this.value=0;if(this.value>2.75)this.value=2.75" id="diemutngdtx" type="number"
+                            class="form-control" name="diemutngdtx" placeholder="Điểm ưu tiên"></div>
+                </div>
+            
+                <button type="submit" class="btn btn-primary btn-block">Tính Xem</button>
+            </form>
         </div>
 
 
