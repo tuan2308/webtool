@@ -10,7 +10,7 @@
       alert("Vui lòng nhập link facebook hợp lệ !");
       $('#link').focus();
     } else if (link.indexOf('facebook.com') < 0) {
-      alert("Vui lòng nhập link facebook !");
+      alert("Vui lòng nk facebook !");
       $('#link').focus();
     } else {
 
