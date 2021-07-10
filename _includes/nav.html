@@ -13,7 +13,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="main-navbar">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav">
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
           <li class="nav-item dropdown">
@@ -34,6 +34,11 @@
       {%- endfor -%}
 
     </ul>
+    <form action="/tim-kiem" method="get" class="ms-auto">
+  
+      <div class="input-group"><input type="text" id="search-box" name="query" class="form-control" placeholder="Nhập từ khoá tìm kiếm"><button type="submit" value="Tìm kiếm" class="btn btn-primary"><i class="fas fa-search"></i></button></div>
+      
+    </form>
   </div>
 
   {% if site.navbar-extra %}
@@ -51,6 +56,10 @@
       </div>
     </div>
   {% endif %}
+
+
+
+
 </div>
 </nav>
 </div>
