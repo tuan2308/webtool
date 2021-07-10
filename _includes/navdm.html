@@ -1,0 +1,86 @@
+
+<style>
+
+div#tad-danhmuc {
+    padding: 1rem 0 1rem 1rem !important;
+    background: #fff;
+    flex-wrap: nowrap!important;
+    border: 1px solid #dee2e6!important;
+    overflow: auto;
+    border-radius: 5px;
+    margin: 0;
+}
+
+div#tad-danhmuc>div {
+    -ms-flex: none;
+    flex: none;
+    padding-left: 0;
+    padding-right: 15px;
+    width: auto;
+}
+
+div#tad-danhmuc a {
+    text-decoration: none;
+}
+
+</style>
+<div class="container"><div class='danhmuc row' id='tad-danhmuc'></div></div>
+
+<script type='text/javascript'>
+//<![CDATA[
+
+var danhmuc = [
+{
+icon: "fas fa-graduation-cap",
+name: "Tính điểm tốt nghiệp THPT",
+url: "https://webtool.vn/tinh-diem-tot-nghiep-thpt/",
+},
+{
+icon: "far fa-image",
+name: "Tạo ảnh đẹp",
+url: "https://www.taoanhdep.com/",
+target:"_blank"
+},
+{
+icon: "fas fa-pencil-alt",
+name: "Tính điểm tốt nghiệp THPT",
+url: "/tao-chu-in-dam-in-nghieng/",
+},
+{
+icon: "fas fa-mobile-alt",
+name: "Hình nền tai gấu iphone",
+url: "/2020/05/tao-hinh-nen-an-tai-tho-iphone-x.html"
+},
+
+{
+icon: "fas fa-check-circle",
+name: "Avatar dấu tích xanh",
+url: "/2020/04/tao-anh-avatar-facebook-dau-tich-xanh.html"
+}
+];
+
+var taddanhmuc = document.getElementById("tad-danhmuc");
+danhmuc.forEach(function(danhmuc) {
+
+ var dm = document.createElement('div');;
+
+
+if(danhmuc.target){
+
+dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"' target='"+ danhmuc.target +"'><div><i class='"+danhmuc.icon+"'></i> "+danhmuc.name+"</div></a></div>";
+}
+else{
+ dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"'><div><i class='"+danhmuc.icon+"'></i> "+danhmuc.name+"</div></a></div>";
+}
+
+
+
+ 
+
+taddanhmuc.appendChild(dm);
+
+});
+
+//]]>
+</script>
+
