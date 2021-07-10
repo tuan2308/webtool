@@ -49,7 +49,7 @@ layout: base
     "name": {{ page.title | jsonify }},
     "headline": {{ page.title | jsonify }},
     "keywords": {{ page.tags | join: ',' | jsonify }},
-    "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+    "description": {{ description }},
     "articleBody": {{ page.content | strip_html | jsonify }},
     "datePublished": {{ page.date | jsonify }},
     "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
