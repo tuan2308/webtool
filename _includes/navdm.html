@@ -22,7 +22,7 @@ div#tad-danhmuc>div {
 div#tad-danhmuc a {
     text-decoration: none;
 }
-
+@media only screen and (min-width:768px){div#tad-danhmuc::-webkit-scrollbar { height: 5px;margin-top:-10px; } div#tad-danhmuc::-webkit-scrollbar-track { background:#eee; } div#tad-danhmuc::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; } div#tad-danhmuc::-webkit-scrollbar-thumb:hover { background: #aaa; }}
 </style>
 <div class="container"><div class='danhmuc row' id='tad-danhmuc'></div></div>
 
@@ -52,8 +52,11 @@ name: "Hình nền tai gấu iphone",
 url: "https://www.taoanhdep.com/2020/05/tao-hinh-nen-an-tai-tho-iphone-x.html",
 target:"_blank"
 },
-
-
+{
+icon: "fab fa-facebook",
+name: "Lấy id facebook",
+url: "/lay-id-facebook/",
+},
 {
 icon: "fas fa-check-circle",
 name: "Avatar dấu tích xanh",
@@ -70,10 +73,10 @@ danhmuc.forEach(function(danhmuc) {
 
 if(danhmuc.target){
 
-dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"' target='"+ danhmuc.target +"'><div><i class='"+danhmuc.icon+"'></i> "+danhmuc.name+"</div></a></div>";
+dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"' target='"+ danhmuc.target +"'><h3><i class='"+danhmuc.icon+"'></i> "+danhmuc.name+"</h3></a></div>";
 }
 else{
- dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"'><div><i class='"+danhmuc.icon+"'></i> "+danhmuc.name+"</div></a></div>";
+ dm.innerHTML = "<div class='border px-3 py-2 rounded'><a href='"+ danhmuc.url +"'><h3><i class='"+danhmuc.icon+"'></i> "+danhmuc.name+"</h3></a></div>";
 }
 
 
