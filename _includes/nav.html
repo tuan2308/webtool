@@ -2,9 +2,9 @@
 <nav class="mb-3 card navbar navbar-expand-lg navbar-light {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 <div class="container">
   {%- if site.title-img -%}
-    <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" width="32" height="32" class="align-bottom" src="{{ site.title-img | relative_url}}"/> {{ site.title }}</a>
+    <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" width="32" height="32" class="align-bottom" src="{{ site.title-img | relative_url}}"/> {{ site.minititle }}</a>
   {%- elsif site.title -%}
-    <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
+    <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.minititle }}</a>
   {%- endif -%}
 
 
