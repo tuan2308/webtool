@@ -12,7 +12,7 @@
             var E = document.getElementById("diemkk").value;
             var s = document.getElementById("diemut").value;
             if (q <= 1 || r <= 1 || t <= 1 || v <= 1 || x <= 1 || A <= 1) {
-                document.getElementById("tinhxuoi").innerHTML = "Bạn đã trượt tốt nghiệp do có 1 môn dưới hoặc bằng 1!"
+                document.getElementById("tinhxuoi").innerHTML = "<b class='text-danger'><i class='fas fa-times'></i> Bạn đã trượt tốt nghiệp do có 1 môn dưới hoặc bằng 1!</b>"
                 document.getElementById("tinhxuoi2").innerHTML = ""
             } else {
                 var u = (Number(v) + Number(x) + Number(A)) / 3;
@@ -23,9 +23,9 @@
                 var z = D.toFixed(2);
                 document.getElementById("tinhxuoi").innerHTML = "Điểm xét tốt nghiệp của bạn là: " + B;
                 if (B < 5) {
-                    document.getElementById("tinhxuoi2").innerHTML = "Bạn đã trượt tốt nghiệp!<br/>Bạn cần ít nhất " + z + " điểm nữa để đỗ tốt nghiệp"
+                    document.getElementById("tinhxuoi2").innerHTML = "<b class='text-danger'><i class='fas fa-times'></i> Bạn đã trượt tốt nghiệp!</b><br/>Bạn cần ít nhất " + z + " điểm nữa để đỗ tốt nghiệp"
                 } else {
-                    document.getElementById("tinhxuoi2").innerHTML = "Bạn đã đỗ tốt nghiệp!"
+                    document.getElementById("tinhxuoi2").innerHTML = "<b class='text-success'><i class='fas fa-check'></i> Bạn đã đỗ tốt nghiệp!</b>"
                 }
             }
             p.preventDefault();
@@ -51,7 +51,7 @@
             var l = document.getElementById("diemkkgdtx").value;
             var m = document.getElementById("diemutgdtx").value;
             if (p <= 1 || q <= 1 || s <= 1) {
-                document.getElementById("tinhxuoigdtx").innerHTML = "Bạn đã trượt tốt nghiệp do có 1 môn dưới hoặc bằng 1!"
+                document.getElementById("tinhxuoigdtx").innerHTML = "<b class='text-danger'><i class='fas fa-times'></i> Bạn đã trượt tốt nghiệp do có 1 môn dưới hoặc bằng 1!</b>"
                 document.getElementById("tinhxuoi2gdtx").innerHTML = ""
             } else {
                 var n = ((Number(p) + Number(q) + Number(s)) / 3 + Number(l) / 4) * 0.7 + Number(u) * 0.3 + Number(m);
@@ -60,9 +60,9 @@
                 var t = r.toFixed(2);
                 document.getElementById("tinhxuoigdtx").innerHTML = "Điểm xét tốt nghiệp của bạn là: " + o;
                 if (o < 5) {
-                    document.getElementById("tinhxuoi2gdtx").innerHTML = "Bạn đã trượt tốt nghiệp!<br/>Bạn cần ít nhất " + t + " điểm nữa để đỗ tốt nghiệp"
+                    document.getElementById("tinhxuoi2gdtx").innerHTML = "<b class='text-danger'><i class='fas fa-times'></i> Bạn đã trượt tốt nghiệp!</b><br/>Bạn cần ít nhất " + t + " điểm nữa để đỗ tốt nghiệp"
                 } else {
-                    document.getElementById("tinhxuoi2gdtx").innerHTML = "Bạn đã đỗ tốt nghiệp!"
+                    document.getElementById("tinhxuoi2gdtx").innerHTML = "<b class='text-success'><i class='fas fa-check'></i> Bạn đã đỗ tốt nghiệp!</b>"
                 }
             }
             k.preventDefault();
