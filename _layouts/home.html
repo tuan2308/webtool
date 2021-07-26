@@ -1,21 +1,13 @@
 ---
 layout: default
 ---
-<div class="card my-3">
-  <div class="card-body">
 
-    <h1 style=" display: inline-block; font-size: 1rem; ">Web Tool</h1> là một website tổng hợp các công cụ, tiện ích online hoàn toàn miễn phí.
-    Với mong muốn giúp đỡ mọi người thực hiện những điều mình muốn một cách đơn giản nhất, website cung cấp các ứng dụng phần mềm trực tuyến trên nhiều lĩnh vực khác nhau,
-    hoạt động tốt trên mọi thiết bị có kết nối Internet.
-
-<br/>
-</div></div>
 {{ content }}
 
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="card post-home mb-3">
+<div class="card post-home my-3">
 <div class="card-body row row-cols-1 row-cols-md-2">
 
   {% for post in posts %}
@@ -85,3 +77,12 @@ layout: default
 </ul>
 {% endif %}
 
+<div class="card my-3">
+  <div class="card-body">
+
+    <h1 style=" display: inline-block; font-size: 1rem; ">Web Tool</h1> là một website tổng hợp các công cụ, tiện ích online hoàn toàn miễn phí.
+    Với mong muốn giúp đỡ mọi người thực hiện những điều mình muốn một cách đơn giản nhất, website cung cấp các ứng dụng phần mềm trực tuyến trên nhiều lĩnh vực khác nhau,
+    hoạt động tốt trên mọi thiết bị có kết nối Internet.
+
+<br/>
+</div></div>
